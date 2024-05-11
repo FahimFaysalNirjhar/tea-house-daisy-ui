@@ -15,10 +15,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- custom tailwind css -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'gradient-start': '#FF8938',
+                'gradient-end': '#F00',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-
+<body class="font-manrope">
+    <!-- header section -->
+    <header>
+        <nav class="max-w-6xl mx-auto mt-16">
+            <div>
+                <div class="flex p-4 justify-between items-center flex-col  lg:flex-row">
+                    <!-- content -->
+                    <div>
+                        <h1 class=" text-6xl md:text-7xl font-extrabold">It's good <br>
+                            tea time at The <br> Tea House</h1>
+                        <p class="py-6  max-w-lg font-medium text-lg text-[#777]">Tea and Botanical Solutions Supplier Give
+                            Optimum Satisfaction To Your Taste Buds.</p>
+                        <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end">Explore More</button>
+                    </div>
+                    <img src="images/banner.png" class="max-w-sm p-4" />
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
